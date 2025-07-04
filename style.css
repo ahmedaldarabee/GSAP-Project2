@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero{
+    position:relative;
+    background:#825dd2;
+    height:100vh;
+}
+
+.hero::after{
+    content: '';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80%;
+    height:100%;
+    background:radial-gradient(circle,#bd9fff,transparent,transparent);
+    z-index: 1;
+}
+
+header {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:80px;
+    z-index:1000;
+}
+
+header nav {
+    width:80%;
+    height: 100%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: 'Anton',serif;
+}
+
+header .nav_links {
+    display: flex;
+    gap: 40px;
+}
+
+header .nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: all 0.3s;
+}
+
+header .nav_links a:hover{
+    color: #e0d3d3;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
