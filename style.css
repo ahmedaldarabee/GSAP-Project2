@@ -163,8 +163,31 @@ header .nav_links a:hover{
     z-index: 20;
 }
 
-.about .text h2 span {
+.about .text span.typewriter {
     color: #825dd2;
+    display: inline-block;
+    border-right: 2px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0ch;
+    font-size: 25px;
+    animation: typing 2s steps(20) infinite alternate, cursor 0.4s step-end infinite;
+}
+/* steps(20) number of chars in span as a text */
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 12ch; /* Adjust this number to match the length of your text */
+    }
 }
 
 .about .text .boxs {
@@ -238,4 +261,8 @@ header .nav_links a:hover{
     font-family: "Anton",serif;
     color: #825dd2;
     letter-spacing: 7px;
+}
+
+.pointer{
+    cursor: pointer;
 }
